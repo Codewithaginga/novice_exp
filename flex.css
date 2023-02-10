@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.demo{
+    width: 700px;
+    height: 700px;
+    margin: 50px auto;
+    background: gray;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inner{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    flex-basis: 15%;
+}
+
+.inner:nth-child(1){
+    background: black;
+    color: white;
+   
+}
+.inner:nth-child(2){
+    background: white;
+}
+.inner:nth-child(3){
+    background: red;
+}
+.inner:nth-child(4){
+    background: white;
+}
+.inner:nth-child(5){
+    background: green;
+}
+.inner:nth-child(6){
+    background: black;
+    color: white;
+   
+}
+.inner:nth-child(7){
+    background: white;
+}
+.inner:nth-child(8){
+    background: red;
+}
+.inner:nth-child(9){
+    background: white;
+}
+.inner:nth-child(10){
+    background: green;
+}
