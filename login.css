@@ -5,68 +5,108 @@
     font-family: sans-serif;
 }
 
-body{
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(hsla(0, 0%, 0%, 0.7), hsla(0, 0%, 0%, 0.7)),
-    url('./player.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
 .container{
-    background: rgba(7, 7, 7, 0.5);
-    width: 500px;
-    margin: 150px auto;
-    border-radius: 6px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(hsla(218, 40%, 21%, 0.8), hsla(244, 37%, 18%, 0.8)),
+    url('./bridge.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
-.form-1 h1{
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 50px 60px 70px;
     text-align: center;
-    color: red;
-    padding-top: 40px;
-    padding-bottom: 35px;
 }
 
-.form-1 input:nth-child(1){
-    padding: 5px;
-    margin: 15px auto;
-}
-
-.form-1 input:nth-child(2){
-    padding: 5px;
-    margin: 15px auto;
-    margin-left: 20px;
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
 
 }
 
-.form-1 input:nth-child(3){
-    padding: 5px;
-    margin: 15px auto;
-    outline: none;
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.form-1 input:nth-child(4){
-    padding: 5px;
-    margin: 15px auto;
+.input-fields{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.3s;
+    overflow: hidden;
+
 }
 
-.form-1 label:nth-child(1){
-    padding: 10px;
-    color: white;
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
 }
 
-.form-1 label:nth-child(2){
-    padding: 10px;
-    color: white;
+.input-fields i{
+    margin-left: 15px;
+    color: #999;
 }
 
-.form-1 label:nth-child(3){
-    padding: 10px;
-    color: white;
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
 }
 
-.form-1 label:nth-child(4){
-    padding: 10px;
-    color: white;
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
+.btn-field button{
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 280px;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+
+}
+
