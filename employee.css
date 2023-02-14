@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.heading h1
+{
+    text-align: center;
+    margin: 50px 0;
+    letter-spacing: 2px;
+
+}
+
+.heading h1::after{
+    content: '';
+    background: #333;
+    display: block;
+    height: 3px;
+    width: 150px;
+    margin: 10px auto;
+}
+
+.rows
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+
+.rows img{
+    width: 200px;
+    height: 234px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: 1s;
+}
+
+.rows h4, p, h5{
+    text-align: center;
+    padding: 5px;
+}
+
+
